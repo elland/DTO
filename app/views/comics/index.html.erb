@@ -1,0 +1,10 @@
+<h1>Showing comic <%= @comic %></h1>
+
+  <%= image_tag "http://www.penguinpetes.com/Doomed_to_Obscurity/strips/#{@comic}.jpg" %>
+
+
+  <br/>
+  <%= link_to 'previous', prev_comics_path %>
+  |
+  <%= link_to 'next', next_comics_path %>
+<br />
