@@ -1,10 +1,10 @@
 <h1>Showing comic <%= @comic %></h1>
+<div data-pjax-container>
+  <%= image_tag "http://www.penguinpetes.com/Doomed_to_Obscurity/strips/#{@comic}.jpg", width: 1000, height: 250%>
+</div>
 
-  <%= image_tag "http://www.penguinpetes.com/Doomed_to_Obscurity/strips/#{@comic}.jpg" %>
-
-
-  <br/>
-  <%= link_to 'previous', prev_comics_path %>
-  |
-  <%= link_to 'next', next_comics_path %>
+<br/>
+<%= link_to 'previous', prev_comics_path, accesskey: 'P' %>
+|
+<%= link_to 'next', next_comics_path, accesskey: 'N' %>
 <br />
