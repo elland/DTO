@@ -23,4 +23,9 @@ class ComicsController < ApplicationController
     @comic = session[:comic_id] = id + (session[:comic_id].to_i - 1 ).to_s
     redirect_to show_comic_path(@comic)
   end
+
+  def last
+    @comic = session[:comic_id] =Comic.get_last
+    redirect_to show_comic_path(@comic)
+  end
 end

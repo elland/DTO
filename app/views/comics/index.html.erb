@@ -7,5 +7,6 @@
   |
   <%= link_to 'next', next_comics_path, accesskey: 'N' %>
   <%= link_to '| first', root_path, accesskey: 'F' unless @comic.to_i == 1 %>
+  <%= link_to '| last', last_comic_path, accesskey: 'L' %>
   <br />
 </div>
