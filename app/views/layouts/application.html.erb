@@ -15,23 +15,33 @@
             'delayTime' : 4000
             });
           });
-</script>
-<%= yield %>
-<button class='raptor'>
-  Raptorize!
-</button>
-<script type="text/javascript">
+    </script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29657740-1']);
-  _gaq.push(['_trackPageview']);
+    <div id='content'>
 
-  (function() {
-   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
+      <div id='centered'>
 
- </script>
+        <h1> Doomed to Obscurity </h1>
+        <span id='undertitle'> A webcomic that gives the geek culture just what it deserves!  </span>
+        <%= yield %>
+
+        <button class='raptor'>
+          Raptorize!
+        </button>
+      </div>
+    </div>
+
+    <%= render 'layouts/footer' %>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29657740-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
   </body>
 </html>

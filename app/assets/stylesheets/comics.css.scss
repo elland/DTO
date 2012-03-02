@@ -1,3 +1,41 @@
 // Place all the styles related to the comics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 6px;
+}
+
+#content {
+  margin: 40px 0;
+  width: 100%;
+}
+
+#centered {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#footer {
+  border-top: solid black 1px;
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  margin-top: 200px;
+  padding-top: 10px;
+  color: lightgrey;
+}
+
+#footer a {
+  color: darkgrey;
+}
+
+#undertitle {
+  margin-left: 40px;
+  color: grey;
+}

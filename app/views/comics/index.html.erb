@@ -1,7 +1,7 @@
 <div data-pjax-container>
-  <h1>Showing comic <%= @comic %></h1>
-  <%= image_tag "http://www.penguinpetes.com/Doomed_to_Obscurity/strips/#{@comic}.jpg", width: 1000, height: 250%>
 
+  <%= image_tag "http://www.penguinpetes.com/Doomed_to_Obscurity/strips/#{@comic}.jpg", width: 1000, height: 250%>
+  <h4>Showing comic <%= @comic.to_i %></h1>
   <br/>
   <%= link_to 'previous', prev_comics_path, accesskey: 'P' %>
   |
