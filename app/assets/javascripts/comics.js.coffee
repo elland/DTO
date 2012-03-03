@@ -5,6 +5,6 @@ $(document).ready ->
   $('#favicon').click ->
     $.ajax
       type: 'POST'
-      url: '/favorites/add/1'
+      url: "/favorites/add/" + $("#comic").attr('alt')
     .always (data) ->
       $('#favicon').attr('src', "/assets/fav_#{data}.png")
