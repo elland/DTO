@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 * {
-  margin: 4px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,6 +19,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float: right;
+}
+
+.raptor {
+  padding: 3px;
+  margin-bottom: 4px;
+  float: right;
 }
 
 #footer {

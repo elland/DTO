@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dto</title>
+    <title>Doomed to Obscurity</title>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -16,18 +16,26 @@
             });
           });
     </script>
-
+    <% if alert %>
+      <div class='notice'>
+        <%= notice %>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class='alert'>
+        <%= alert %>
+      </div>
+    <% end %>
     <div id='content'>
 
       <div id='centered'>
 
         <h1> Doomed to Obscurity </h1>
         <span id='undertitle'> A webcomic that gives the geek culture just what it deserves!  </span>
-        <%= yield %>
-
-        <button class='raptor'>
+        <button class='raptor btn bottom'>
           Raptorize!
         </button>
+        <%= yield %>
       </div>
     </div>
 
