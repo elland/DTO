@@ -9,8 +9,16 @@ class User < ActiveRecord::Base
 
   has_many :favorites
 
+  def toggle_fav(comic)
+    if is_fav?(comic)
+      favorites.where(comic: comic.to_i).destroy_all
+    else
+      favorites.create(comic: comic.to_i)
+    end
+  end
+
   def is_fav?(comic)
-    return true unless favorites.where(:comic => comic).empty?
+    return true unless favorites.where(comic: comic.to_i).empty?
     false
   end
 end

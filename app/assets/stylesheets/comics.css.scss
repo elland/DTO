@@ -31,9 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .raptor {
-  padding: 3px;
+  padding: 7px;
   margin-bottom: 4px;
-  float: right;
 }
 
 #footer {
@@ -53,4 +52,8 @@ h1, h2, h3, h4, h5, h6 {
 #undertitle {
   margin-left: 40px;
   color: grey;
+}
+
+#favicon {
+  cursor: pointer;
 }
