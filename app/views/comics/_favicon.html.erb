@@ -1,1 +1,3 @@
+<% if current_user %>
 <%= image_tag("fav_#{current_user.is_fav?(@comic)}.png", class: :btn, id: :favicon) %>
+<% end %>
