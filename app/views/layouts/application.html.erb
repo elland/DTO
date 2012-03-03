@@ -26,6 +26,18 @@
         <%= alert %>
       </div>
     <% end %>
+    <nav class='navbar'>
+      <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li class="active">
+            <a href="/">Home</a>
+            </li>
+            <%= render :partial => 'shared/user_items' %>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div id='content'>
 
       <div id='centered'>

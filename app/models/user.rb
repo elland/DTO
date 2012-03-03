@@ -8,4 +8,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_many :favorites
+
+  def is_fav?(comic)
+    return true unless favorites.where(:comic => comic).empty?
+    false
+  end
 end

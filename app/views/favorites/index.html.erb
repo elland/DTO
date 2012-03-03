@@ -1,0 +1,6 @@
+<h3>My favorites</h3>
+<ul>
+  <% @favorites.each do |fav| %>
+    <li><%= link_to "Comic ##{fav.comic}", show_comic_path(fav.comic) %></li>
+  <% end %>
+</ul>

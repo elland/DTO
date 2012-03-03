@@ -6,7 +6,15 @@ class ComicsController < ApplicationController
 
 
   def show
-    @comic = session[:comic_id] = params[:id]
+    id = ''
+    if params[:id].size < 7
+      (7 - (params[:id].to_i + 1).to_s.size).times{id << '0'}
+      id << params[:id]
+      puts id
+    else
+      id = params[:id]
+    end
+    @comic = session[:comic_id] = id
     render :index
   end
 

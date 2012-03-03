@@ -1,0 +1,6 @@
+<% if current_user %>
+  <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+<% else %>
+<li><a href="<%= new_user_session_path %>">Login</a></li>
+<% end %>
+<li><a href="<%= favorites_path %>">Favorite</a></li>
